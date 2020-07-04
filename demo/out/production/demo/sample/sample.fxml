@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="852.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox prefHeight="509.0" prefWidth="852.0">
+            <children>
+            <FlowPane fx:id="fbox" alignment="CENTER" prefHeight="297.0" prefWidth="852.0" style="-fx-background-color: #2F2FA2;" />
+                <Pane fx:id="updatePane" prefHeight="134.0" prefWidth="852.0" style="-fx-background-color: #d8e1e3;">
+                    <children>
+                        <JFXButton fx:id="genCheck" alignment="CENTER" layoutX="346.0" layoutY="35.0" onAction="#run" prefHeight="64.0" prefWidth="161.0" ripplerFill="WHITE" style="-fx-background-color: #3333af;" text="C H E C K" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="22.0" />
+                            </font>
+                        </JFXButton>
+                  <JFXButton fx:id="dRaw" alignment="CENTER" layoutX="74.0" layoutY="35.0" onAction="#onOpenClick" prefHeight="64.0" prefWidth="127.0" ripplerFill="WHITE" style="-fx-background-color: #3333af;" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="hInt" alignment="CENTER" layoutX="659.0" layoutY="32.0" onAction="#openAllBox" prefHeight="70.0" prefWidth="134.0" ripplerFill="WHITE" style="-fx-background-color: #3333af;" text="HINT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                    </children>
+                </Pane>
+            <Pane prefHeight="81.0" prefWidth="852.0">
+               <children>
+                  <Button fx:id="genesis" mnemonicParsing="false" onAction="#Generate" prefHeight="81.0" prefWidth="852.0" style="-fx-background-color: black;" text="GENERATE" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            </children>
+        </VBox>
+      <Pane layoutY="509.0" prefHeight="103.0" prefWidth="852.0">
+         <children>
+            <Label fx:id="alertM" alignment="CENTER" layoutX="250.0" layoutY="24.0" prefHeight="56.0" prefWidth="327.0" text="" />
+            <Label prefHeight="103.0" prefWidth="82.0" text="CHANCES" />
+            <Label fx:id="ChancesL" layoutX="92.0" prefHeight="103.0" prefWidth="72.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
